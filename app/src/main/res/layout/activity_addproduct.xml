@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addproduct"
+    android:orientation="vertical"
+    android:background="@drawable/add_product_back_ground">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Product"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:textColor="#F300000F"
+        android:textColorHighlight="#00000F"
+        android:id="@+id/Product"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:id="@+id/AddProduct"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="Add Product"
+        android:textColor="#EE00000F"
+        android:textSize="22sp"
+        />
+
+</LinearLayout>
