@@ -1,4 +1,4 @@
-package www.uttammalakar.com;
+package www.ratan.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
   private Button total,stockin,stockout,addproduct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //accotion bar hide
+        getSupportActionBar().hide();
+        //end
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         total=findViewById(R.id.total);

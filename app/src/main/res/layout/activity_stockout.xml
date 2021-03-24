@@ -3,38 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/color"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Stockout">
     <Spinner
+        android:layout_marginTop="15dp"
         android:id="@+id/spinnerstockout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
-
-        <TextView
-            android:id="@+id/namestockin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAllCaps="true"
-            android:textSize="20sp"
-            android:text="name:" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:id="@+id/nameeditstockin"/>
-
-
-    </LinearLayout>
-
 
 
     <LinearLayout
@@ -81,8 +59,14 @@
 
     <Button
         android:id="@+id/buttonstockin"
-        android:layout_width="match_parent"
+
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:textColor="@color/purple_700"
+
         android:text="save" />
 
 </LinearLayout>

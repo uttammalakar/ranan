@@ -19,21 +19,24 @@
         android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
         android:layout_margin="20dp"
         android:inputType="text"
+        android:background="@drawable/color"
         android:textSize="25sp"
         android:textColor="#F300000F"
         android:textColorHighlight="#00000F"
         android:id="@+id/Product"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_design"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:textColor="@color/purple_700"
+
         android:id="@+id/AddProduct"
-        android:layout_margin="10dp"
-        android:clickable="true"
+
         android:text="Add Product"
-        android:textColor="#EE00000F"
-        android:textSize="22sp"
+
         />
 
 </LinearLayout>

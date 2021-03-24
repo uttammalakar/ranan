@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="www.uttammalakar.com">
+    package="www.ratan.com">
 
     <permission android:name="INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/button"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/button"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeActivity">
-        <activity android:name=".Addproduct"></activity>
-        <activity android:name=".Stockout" />
-        <activity android:name=".Total" />
-        <activity android:name=".StockIn" />
-        <activity android:name=".MainActivity">
+        <activity android:name="www.ratan.com.Addproduct"></activity>
+        <activity android:name="www.ratan.com.Stockout"/>
+        <activity android:name="www.ratan.com.Total"/>
+        <activity android:name="www.ratan.com.StockIn"/>
+        <activity android:name="www.ratan.com.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

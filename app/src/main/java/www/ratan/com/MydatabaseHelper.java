@@ -1,4 +1,4 @@
-package www.uttammalakar.com;
+package www.ratan.com;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,11 +14,11 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MydatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME="uttam.db";
+    private static final String DATABASE_NAME="ratan";
     private static final String TABLE_NAMEIN="stockin";
     private static final String TABLE_NAMEOUT="stockout";
     private static final String TABLE_NAMEPRO="product";
-    private static final int VERSION=3;
+    private static final int VERSION=2;
     //colam name
     private static final String ID="id";
     private static final String NAME="name";
@@ -153,8 +153,8 @@ public class MydatabaseHelper extends SQLiteOpenHelper {
      return cursor1;
 
  }
- //3/14/2021 spinner code by uttam
- public ArrayList<String> grtAllProvince(){
+ //3/14/2021 upload data spinner code by uttam
+ public ArrayList<String> getAllproduct(){
 
         ArrayList<String> list=new ArrayList<String>();
         SQLiteDatabase db=this.getReadableDatabase();

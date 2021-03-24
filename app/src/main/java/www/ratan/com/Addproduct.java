@@ -1,4 +1,4 @@
-package www.uttammalakar.com;
+package www.ratan.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "www.uttammalakar.com"
+        applicationId "www.ratan.com"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

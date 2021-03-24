@@ -1,6 +1,5 @@
-package www.uttammalakar.com;
+package www.ratan.com;
 
-import androidx.annotation.ArrayRes;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -139,6 +138,9 @@ Node node;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //accotion bar hide
+        getSupportActionBar().hide();
+        //end
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_in);
 
@@ -146,7 +148,7 @@ Node node;
 
         sqLiteDatabase=mydatabaseHelper.getWritableDatabase();
 
-        productName=(EditText) findViewById(R.id.nameeditstockin);
+       // productName=(EditText) findViewById(R.id.nameeditstockin);
         priceEdittext= (EditText) findViewById(R.id.priceeditstockin);
         quantityEdittext=(EditText)findViewById(R.id.producteditstockin);
         Button savebutton = (Button) findViewById(R.id.buttonstockin);
@@ -157,19 +159,22 @@ Node node;
 
     @Override
     public void onClick(View v) {
-        //uttam coad
-        if(productName.length()==0){ productName.setError("Enter name"); }
 
-        else if (priceEdittext.length()==0){priceEdittext.setError("Enter price");}
+
+
+        //uttam code
+       // if(productName.length()==0){ productName.setError("Enter name"); }
+
+         if (priceEdittext.length()==0){priceEdittext.setError("Enter price");}
         else if (quantityEdittext.length()==0){quantityEdittext.setError("Enter quantity");}
         else{
-
-        String name=productName.getText().toString().trim();
+            String product_name=spinner.getSelectedItem().toString();
+       // String name=productName.getText().toString().trim();
         String price=priceEdittext.getText().toString().trim();
         String quantity=quantityEdittext.getText().toString().trim();
          if (v.getId()==R.id.buttonstockin) {
 
-             long rowId = mydatabaseHelper.insertData("stockin", name, price, quantity);
+             long rowId = mydatabaseHelper.insertData("stockin", product_name, price, quantity);
 
              if (rowId == -1) {
 
@@ -217,8 +222,8 @@ stack.push(cursor.getString(1));
 
         }
 
-//uttam by spinner coad 15/03/2021
-        ArrayList<String> listpro=mydatabaseHelper.grtAllProvince();
+//uttam data upload by spinner coad 15/03/2021
+        ArrayList<String> listpro=mydatabaseHelper.getAllproduct();
         Spinner sp_in=(Spinner)findViewById(R.id.spinnerstockin);
         ArrayAdapter <String> adapter_in=new ArrayAdapter<String>(this,R.layout.spinnerlayout,R.id.text,listpro);
         sp_in.setAdapter(adapter_in);
